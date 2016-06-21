@@ -25,15 +25,15 @@ public class Demo {
 			R2.resume();
 			System.out.println("Resuming thread Two");
 		} catch (InterruptedException e) {
-			System.out.println("Main thread Interrupted");
+			System.out.println("ShoppingCartTest thread Interrupted");
 		}
 		try {
 			System.out.println("Waiting for threads to finish.");
 			R1.thread.join();
 			R2.thread.join();
 		} catch (InterruptedException e) {
-			System.out.println("Main thread Interrupted");
+			System.out.println("ShoppingCartTest thread Interrupted");
 		}
-		System.out.println("Main thread exiting.");
+		System.out.println("ShoppingCartTest thread exiting.");
 	}
 }

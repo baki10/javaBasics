@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/javaTutorials.iml" filepath="$PROJECT_DIR$/.idea/modules/javaTutorials.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/javaTutorials_main.iml" filepath="$PROJECT_DIR$/.idea/modules/javaTutorials_main.iml" group="javaTutorials" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/javaTutorials_test.iml" filepath="$PROJECT_DIR$/.idea/modules/javaTutorials_test.iml" group="javaTutorials" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/javaBasics.iml" filepath="$PROJECT_DIR$/.idea/modules/javaBasics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/javaBasics_main.iml" filepath="$PROJECT_DIR$/.idea/modules/javaBasics_main.iml" group="javaBasics" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/javaBasics_test.iml" filepath="$PROJECT_DIR$/.idea/modules/javaBasics_test.iml" group="javaBasics" />
     </modules>
   </component>
 </project>
