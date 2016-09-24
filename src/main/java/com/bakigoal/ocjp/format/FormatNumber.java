@@ -11,13 +11,13 @@ public class FormatNumber {
 	public static void main(String[] args) {
 		long tenMillion = 10_000_000L;
 		// first print ten million in German locale
-		NumberFormat germanFormat = NumberFormat.getInstance(new Locale("ru", "RU", ""));
-		String localizedTenMillion = germanFormat.format(tenMillion);
+		NumberFormat russianFormat = NumberFormat.getInstance(new Locale("ru", "RU", ""));
+		String localizedTenMillion = russianFormat.format(tenMillion);
 		System.out.println(tenMillion + " in Russian locale is " + localizedTenMillion);
 
 		// now, scan the value ten million given in German locale
 		try {
-			Number parsedAmount = germanFormat.parse(localizedTenMillion);
+			Number parsedAmount = russianFormat.parse(localizedTenMillion);
 			if (tenMillion == parsedAmount.longValue()) {
 				System.out.println(localizedTenMillion + " parsed back to number: " + parsedAmount);
 			}
