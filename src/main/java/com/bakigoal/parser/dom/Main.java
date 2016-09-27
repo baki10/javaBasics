@@ -45,7 +45,7 @@ public class Main {
     //document contains the complete XML as a Tree.
     Document document;
     try {
-      document = builder.parse(ClassLoader.getSystemResourceAsStream("employee.xml"));
+      document = builder.parse(ClassLoader.getSystemResourceAsStream(path));
     } catch (SAXException | IOException e) {
       System.err.println(e.getLocalizedMessage());
       return Collections.emptyList();
