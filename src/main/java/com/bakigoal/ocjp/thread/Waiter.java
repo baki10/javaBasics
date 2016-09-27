@@ -22,6 +22,7 @@ public class Waiter extends Thread {
 		}
 	}
 
+	@Override
 	public void run() {
 		// keep going till the user presses ctrl-C and terminates the program
 		while (true) {

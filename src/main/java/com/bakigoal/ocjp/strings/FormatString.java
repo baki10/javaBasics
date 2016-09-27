@@ -16,8 +16,7 @@ package com.bakigoal.ocjp.strings;
  */
 public class FormatString {
 	static void line() {
-		System.out.
-				println("-----------------------------------------------------------------");
+		System.out.println("-----------------------------------------------------------------");
 	}
 
 	static void printHeader() {

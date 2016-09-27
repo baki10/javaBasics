@@ -7,10 +7,8 @@ package com.bakigoal.ocjp.thread;
  * Created by ilmir on 17.04.16.
  */
 public class CoffeeShop {
-	public static void main(String[] s) {
-		CoffeeMachine coffeeMachine = new CoffeeMachine();
-		Waiter waiter = new Waiter();
-		coffeeMachine.start();
-		waiter.start();
-	}
+  public static void main(String[] s) {
+    new CoffeeMachine().start();
+    new Waiter().start();
+  }
 }

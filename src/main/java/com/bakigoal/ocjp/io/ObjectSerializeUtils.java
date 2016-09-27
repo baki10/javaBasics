@@ -13,31 +13,29 @@ import java.io.ObjectOutputStream;
 public class ObjectSerializeUtils {
 
 
-	public static Object deserialize(String file) {
-		//De-serialize the object
-		try (ObjectInputStream ois = new ObjectInputStream(new
-				FileInputStream(file))) {
-			return ois.readObject();
-		} catch (FileNotFoundException fnfe) {
-			System.err.println("cannot create a file with the given file name ");
-		} catch (IOException ioe) {
-			System.err.println("an I/O error occurred while processing the file");
-		} catch (ClassNotFoundException cnfe) {
-			System.err.println("cannot recognize the class of the object - is the file corrupted?");
-		}
-		return null;
-	}
+  public static Object deserialize(String file) {
+    //De-serialize the object
+    try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))) {
+      return ois.readObject();
+    } catch (FileNotFoundException fnfe) {
+      System.err.println("cannot create a file with the given file name ");
+    } catch (IOException ioe) {
+      System.err.println("an I/O error occurred while processing the file");
+    } catch (ClassNotFoundException cnfe) {
+      System.err.println("cannot recognize the class of the object - is the file corrupted?");
+    }
+    return null;
+  }
 
-	public static void serialize(Object object, String file) {
-		//Serialize the object
-		try (ObjectOutputStream oos = new ObjectOutputStream(new
-				FileOutputStream(file))) {
-			oos.writeObject(object);
-		} catch (FileNotFoundException fnfe) {
-			System.err.println("cannot create a file with the given file name ");
-		} catch (IOException ioe) {
-			System.err.println("an I/O error occurred while processing the file");
-		} // the ObjectOutputStream will auto-close, so don'thread have to worry about it
+  public static void serialize(Object object, String file) {
+    //Serialize the object
+    try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file))) {
+      oos.writeObject(object);
+    } catch (FileNotFoundException fnfe) {
+      System.err.println("cannot create a file with the given file name ");
+    } catch (IOException ioe) {
+      System.err.println("an I/O error occurred while processing the file");
+    } // the ObjectOutputStream will auto-close, so don'thread have to worry about it
 
-	}
+  }
 }

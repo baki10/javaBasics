@@ -10,7 +10,7 @@ public class T1 implements Runnable {
 
 	public T1(Chat chat) {
 		this.chat = chat;
-		new Thread(this, "Question").start();
+		new Thread(this, "T1(question)").start();
 	}
 
 	@Override

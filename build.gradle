@@ -11,5 +11,8 @@ repositories {
 
 dependencies {
     compile 'org.postgresql:postgresql:9.4-1206-jdbc42'
+    compile group: 'javax.xml.parsers', name: 'jaxp-api', version: '1.4.5'
+
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
+

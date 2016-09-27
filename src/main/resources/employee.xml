@@ -1,0 +1,17 @@
+<employees>
+    <employee id="111">
+        <firstName>John</firstName>
+        <lastName>O'shea</lastName>
+        <location>London</location>
+    </employee>
+    <employee id="112">
+        <firstName>David</firstName>
+        <lastName>Beckham</lastName>
+        <location>Los Angeles</location>
+    </employee>
+    <employee id="113">
+        <firstName>Denis</firstName>
+        <lastName>Cheryshev</lastName>
+        <location>Valensia</location>
+    </employee>
+</employees>

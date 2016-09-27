@@ -10,5 +10,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: org.postgresql:postgresql:9.4-1206-jdbc42" level="project" />
+    <orderEntry type="library" name="Gradle: javax.xml.parsers:jaxp-api:1.4.5" level="project" />
   </component>
 </module>
