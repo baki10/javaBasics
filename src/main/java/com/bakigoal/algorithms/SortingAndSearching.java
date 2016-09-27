@@ -96,7 +96,7 @@ public class SortingAndSearching {
 
     while (left < right) {
       // search for an element that is > the partitionElement
-      while (data[left].compareTo(partitionElement) <= 0) {
+      while (data[left].compareTo(partitionElement) <= 0 && left < max - 1) {
         left++;
       }
       // search for an element that is < the partitionElement
